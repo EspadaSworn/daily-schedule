@@ -32,15 +32,15 @@ function compareHour(){
   //console.log(timeTemp[1]);
   //console.log(getHour);
   timeSlot.split("-");
-  if (getHour<(timeTemp[1])){
+  if (getHour>(timeTemp[1])){
     $(this).removeClass("present");
     $(this).removeClass("future");
-    $(this).addClass("pass");
+    $(this).addClass("past");
   } else if (getHour=(timeTemp[1])){
     $(this).removeClass("past");
     $(this).removeClass("future");
     $(this).addClass("present");
-  }else{
+  }else {
     $(this).removeClass("past");
     $(this).removeClass("present");
     $(this).addClass("future");
