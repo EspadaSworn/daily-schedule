@@ -5,8 +5,7 @@
 var currentDayEl = $("#currentDay");
 
 
-var getHour= new Date().getHours();
-console.log(getHour);
+
 
 $(".saveBtn").on("click",function() {
   var data=$(this).siblings(".description").val();
@@ -29,12 +28,25 @@ $("#hour-17 .description").val(localStorage.getItem("hour-17"));
 function compareHour(){
   var timeSlot=$(this).attr("id");
   var timeTemp=timeSlot.split("-");
-  console.log(timeTemp);
+  var getHour= new Date().getHours();
+  //console.log(timeTemp[1]);
+  //console.log(getHour);
   timeSlot.split("-");
-  if (getHour) {
-
+  if (getHour<(timeTemp[1])){
+    $(this).removeClass("present");
+    $(this).removeClass("future");
+    $(this).addClass("pass");
+  } else if (getHour=(timeTemp[1])){
+    $(this).removeClass("past");
+    $(this).removeClass("future");
+    $(this).addClass("present");
+  }else{
+    $(this).removeClass("past");
+    $(this).removeClass("present");
+    $(this).addClass("future");
   }
 }
+
 $(".time-block").each(compareHour);
 
 function displayTime() {
