@@ -36,11 +36,11 @@ function compareHour(){
     $(this).removeClass("present");
     $(this).removeClass("future");
     $(this).addClass("past");
-  } else if (getHour=(timeTemp[1])){
+  } else if (getHour==(timeTemp[1])){
     $(this).removeClass("past");
     $(this).removeClass("future");
     $(this).addClass("present");
-  }else {
+  } else {
     $(this).removeClass("past");
     $(this).removeClass("present");
     $(this).addClass("future");
