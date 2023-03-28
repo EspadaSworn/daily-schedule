@@ -11,14 +11,14 @@
 ## Installation
 
     Download repository from github links.
-    https://github.com/EspadaSworn/weather-display
+    https://github.com/EspadaSworn/daily-schedule
     
     Main website
-    https://espadasworn.github.io/horiseon/
+    https://espadasworn.github.io/daily-schedule/
     
 ## Usage
 
-    To be used to create a website with organized flow and navigation so as to improve accessability.
+    To be used to create a website with organized flow so as to be able to save information on shifts and note if times can be modified or have passed. 
 
 <img src="Assets/images/screenshot.png">
 
